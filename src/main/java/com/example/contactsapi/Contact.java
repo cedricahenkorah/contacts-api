@@ -12,11 +12,11 @@ class Contact {
     private @Id @GeneratedValue Long id;
     private String name;
     private String email;
-    private Integer number;
+    private String number;
 
     Contact() {}
 
-    Contact(String name, String email, Integer number) {
+    Contact(String name, String email, String number) {
 
         this.name = name;
         this.email = email;
@@ -35,7 +35,7 @@ class Contact {
         return this.email;
     }
 
-    public Integer getNumber() {
+    public String getNumber() {
         return this.number;
     }
 
@@ -51,7 +51,7 @@ class Contact {
         this.email = email;
     }
 
-    public void setNumber(Integer number) {
+    public void setNumber(String number) {
         this.number = number;
     }
 
